@@ -56,7 +56,7 @@ img:hover{
 }
 
 body{
-	background-image: url("../images/marble.JPG");
+	background-image: url("../images/marble.jpg");
 	background-color: #d7c2b0;
 }
 image{
@@ -93,3 +93,22 @@ P.blocktext{
 	width: 90%;
 	margin: 5px;
 }
+
+#sign {
+position: relative;
+animation-name: mymove;
+animation-duration: 8s;
+animation-timing-function: linear;
+margin: 0 auto;
+}
+
+@keyframes mymove {
+from {width: 35px; opacity: 0;}
+to {width: 375px; opacity: 1;}
+}
+
+@media screen and (prefers-reduced-motion) {
+	#sign{
+		animation-name: dissolve;
+	}
+ }
