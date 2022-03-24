@@ -1,30 +1,47 @@
 header{
+	
 	font-size: 18px;
 	color: black;
 }
 
+.nav{
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav li{
+	background-color: #d7c2b0;
+	padding: 10px;
+	border: 1px solid black;
+	display: inline-block;
+	overflow: hidden;
+} 
+
+
 h1{
-	font-size: 24px;
+	font-size: 10vw; 
 	font-weight: bold;
-	color: brown;
+	color: #0c4f4e;
 	margin: 25px 0;
+	text-align: center;
 }
 
 footer{
-	background-color: burlywood;
+	background-color: #9d442a;
 	padding: 10px 8px;
 	margin-top: 8px;
 }
 
-nav li{
-	padding: 10px;
-	margin: 8px;
-}
+
 
 .active{
-	background-color: burlywood;
+	background-color: #9d442a;
 	font-weight: bold;
-	border: 3px solid brown
+	border: 3px solid #0c4f4e
 }
 
 img{
@@ -36,4 +53,43 @@ img{
 
 img:hover{
 	filter: grayscale();
+}
+
+body{
+	background-image: url("../images/marble.JPG");
+	background-color: #d7c2b0;
+}
+image{
+	align-content: center;
+}
+p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 150%; 
+}
+P.blocktext{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.container{
+	display: grid;
+	grid-template-columns: 300px 300px 300px ;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.grid img{
+	width: 90%;
+	margin:5px;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+.flex img{
+	width: 90%;
+	margin: 5px;
 }
